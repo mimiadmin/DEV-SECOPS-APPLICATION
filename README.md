@@ -34,7 +34,7 @@
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone https://github.com/kingsleyzikora/Netflix-DevSecOps-Project
+    git clone https://github.com/mimiadmin/DEV-SECOPS-APPLICATION.git
     ```
     
 
@@ -201,7 +201,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/kingsleyzikora/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/mimiadmin/DEV-SECOPS-APPLICATION.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -291,7 +291,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/kingsleyzikora/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/mimiadmin/DEV-SECOPS-APPLICATION.git'
             }
         }
         stage("Sonarqube Analysis "){
